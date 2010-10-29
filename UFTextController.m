@@ -27,7 +27,6 @@
 
 @interface UFTextController ()
 
-@property (nonatomic, retain) NSString *unformattedString;
 @property (nonatomic, copy) NSAttributedString *formattedString;
 
 @end
@@ -36,7 +35,6 @@
 
 @synthesize menu;
 @synthesize statusItem;
-@synthesize unformattedString;
 @synthesize formattedString;
 
 - (void)awakeFromNib {

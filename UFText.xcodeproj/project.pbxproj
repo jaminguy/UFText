@@ -254,7 +254,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,6 +270,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
