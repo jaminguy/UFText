@@ -32,34 +32,51 @@
 			<object class="NSCustomObject" id="1050">
 				<string key="NSClassName">NSApplication</string>
 			</object>
-			<object class="NSMenu" id="649796088">
-				<string key="NSTitle">AMainMenu</string>
+			<object class="NSMenu" id="1038314773">
+				<string key="NSTitle"/>
 				<object class="NSMutableArray" key="NSMenuItems">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="NSMenuItem" id="297828329">
-						<reference key="NSMenu" ref="649796088"/>
-						<string key="NSTitle">Clean</string>
+					<object class="NSMenuItem" id="395142755">
+						<reference key="NSMenu" ref="1038314773"/>
+						<string key="NSTitle">Unformat</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="1004857073">
+						<object class="NSCustomResource" key="NSOnImage" id="97174499">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="191076525">
+						<object class="NSCustomResource" key="NSMixedImage" id="8449467">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
-					<object class="NSMenuItem" id="628201758">
-						<reference key="NSMenu" ref="649796088"/>
+					<object class="NSMenuItem" id="342224951">
+						<reference key="NSMenu" ref="1038314773"/>
+						<string key="NSTitle">Reformat</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="97174499"/>
+						<reference key="NSMixedImage" ref="8449467"/>
+					</object>
+					<object class="NSMenuItem" id="87848451">
+						<reference key="NSMenu" ref="1038314773"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsSeparator">YES</bool>
+						<string key="NSTitle"/>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="97174499"/>
+						<reference key="NSMixedImage" ref="8449467"/>
+					</object>
+					<object class="NSMenuItem" id="51961906">
+						<reference key="NSMenu" ref="1038314773"/>
 						<string key="NSTitle">Quit</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="1004857073"/>
-						<reference key="NSMixedImage" ref="191076525"/>
+						<reference key="NSOnImage" ref="97174499"/>
+						<reference key="NSMixedImage" ref="8449467"/>
 					</object>
 				</object>
-				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSCustomObject" id="976324537">
 				<string key="NSClassName">UFTextAppDelegate</string>
@@ -81,14 +98,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">menu</string>
-						<reference key="source" ref="1067115911"/>
-						<reference key="destination" ref="649796088"/>
-					</object>
-					<int key="connectionID">540</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">ufTextController</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="1067115911"/>
@@ -96,12 +105,36 @@
 					<int key="connectionID">542</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">cleanTextAction:</string>
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">menu</string>
 						<reference key="source" ref="1067115911"/>
-						<reference key="destination" ref="297828329"/>
+						<reference key="destination" ref="1038314773"/>
 					</object>
-					<int key="connectionID">543</int>
+					<int key="connectionID">573</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">terminate:</string>
+						<reference key="source" ref="1050"/>
+						<reference key="destination" ref="51961906"/>
+					</object>
+					<int key="connectionID">575</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">unformatMenuItemClick:</string>
+						<reference key="source" ref="1067115911"/>
+						<reference key="destination" ref="395142755"/>
+					</object>
+					<int key="connectionID">577</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">reformatMenuItemClick:</string>
+						<reference key="source" ref="1067115911"/>
+						<reference key="destination" ref="342224951"/>
+					</object>
+					<int key="connectionID">578</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -134,34 +167,46 @@
 						<string key="objectName">Application</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">29</int>
-						<reference key="object" ref="649796088"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="297828329"/>
-							<reference ref="628201758"/>
-						</object>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">494</int>
 						<reference key="object" ref="976324537"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">533</int>
-						<reference key="object" ref="297828329"/>
-						<reference key="parent" ref="649796088"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">534</int>
-						<reference key="object" ref="628201758"/>
-						<reference key="parent" ref="649796088"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">539</int>
 						<reference key="object" ref="1067115911"/>
 						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">569</int>
+						<reference key="object" ref="1038314773"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="395142755"/>
+							<reference ref="342224951"/>
+							<reference ref="51961906"/>
+							<reference ref="87848451"/>
+						</object>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">570</int>
+						<reference key="object" ref="395142755"/>
+						<reference key="parent" ref="1038314773"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">571</int>
+						<reference key="object" ref="342224951"/>
+						<reference key="parent" ref="1038314773"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">572</int>
+						<reference key="object" ref="51961906"/>
+						<reference key="parent" ref="1038314773"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">576</int>
+						<reference key="object" ref="87848451"/>
+						<reference key="parent" ref="1038314773"/>
 					</object>
 				</object>
 			</object>
@@ -170,23 +215,21 @@
 				<object class="NSArray" key="dict.sortedKeys">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>-3.IBPluginDependency</string>
-					<string>29.IBEditorWindowLastContentRect</string>
-					<string>29.IBPluginDependency</string>
-					<string>29.ImportedFromIB2</string>
-					<string>29.WindowOrigin</string>
-					<string>29.editorWindowContentRectSynchronizationRect</string>
-					<string>533.IBPluginDependency</string>
-					<string>534.IBPluginDependency</string>
 					<string>539.IBPluginDependency</string>
+					<string>569.IBEditorWindowLastContentRect</string>
+					<string>569.IBPluginDependency</string>
+					<string>570.IBPluginDependency</string>
+					<string>571.IBPluginDependency</string>
+					<string>572.IBPluginDependency</string>
+					<string>576.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{858, 1094}, {415, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
-					<string>{74, 862}</string>
-					<string>{{6, 978}, {478, 20}}</string>
+					<string>{{866, 1068}, {116, 73}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -208,7 +251,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">543</int>
+			<int key="maxID">578</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -236,14 +279,35 @@
 					<string key="className">UFTextController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">cleanTextAction:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>reformatMenuItemClick:</string>
+							<string>unformatMenuItemClick:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">cleanTextAction:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">cleanTextAction:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>reformatMenuItemClick:</string>
+							<string>unformatMenuItemClick:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">reformatMenuItemClick:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">unformatMenuItemClick:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
