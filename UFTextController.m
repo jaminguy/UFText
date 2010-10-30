@@ -33,17 +33,26 @@
 
 @implementation UFTextController
 
+#define kIconWidth 24
+
 @synthesize menu;
 @synthesize statusItem;
 @synthesize formattedString;
 
+- (void)dealloc {
+	[menu release];
+	[statusItem release];
+	[formattedString release];
+	[super dealloc];
+}
+
 - (void)awakeFromNib {
 	NSStatusBar *bar = [NSStatusBar systemStatusBar];
-	NSStatusItem *item = [bar statusItemWithLength:16];
+	NSStatusItem *item = [bar statusItemWithLength:kIconWidth];
 	[item setHighlightMode: YES];
 	[item setMenu: self.menu];
 	[item setEnabled: YES];
-	[item setImage:[NSImage imageNamed:@"icon"]];
+	[item setImage:[NSImage imageNamed:@"icon20"]];
 	self.statusItem = item;
 }
 
