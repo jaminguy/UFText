@@ -27,7 +27,7 @@
 
 @interface UFTextController ()
 
-@property (nonatomic, copy) NSAttributedString *formattedString;
+@property (copy) NSAttributedString *formattedString;
 
 @end
 
@@ -35,16 +35,13 @@
 
 #define kIconWidth 24
 
-@synthesize menu;
-@synthesize statusItem;
+//private
 @synthesize formattedString;
 
-- (void)dealloc {
-	[menu release];
-	[statusItem release];
-	[formattedString release];
-	[super dealloc];
-}
+//public
+@synthesize menu;
+@synthesize statusItem;
+@synthesize reformatMenuItem;
 
 - (void)awakeFromNib {
 	NSStatusBar *bar = [NSStatusBar systemStatusBar];
@@ -58,7 +55,7 @@
 
 - (IBAction)unformatMenuItemClick:(id)sender {	
 	NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];	
-	NSArray *copiedItems = [pasteboard readObjectsForClasses:[[NSArray alloc] initWithObjects:[NSAttributedString class],nil] options:[NSDictionary dictionary]];	
+	NSArray *copiedItems = [pasteboard readObjectsForClasses:[[NSArray alloc] initWithObjects:[NSAttributedString class], nil] options:[NSDictionary dictionary]];	
 	if (copiedItems != nil) {
 		NSAttributedString *attributedString = [copiedItems objectAtIndex:0];
 		self.formattedString = attributedString;

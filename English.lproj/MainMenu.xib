@@ -52,6 +52,7 @@
 					</object>
 					<object class="NSMenuItem" id="342224951">
 						<reference key="NSMenu" ref="1038314773"/>
+						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">Reformat</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>

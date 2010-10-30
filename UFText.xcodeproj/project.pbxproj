@@ -12,9 +12,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		E14FBC4C127A3C6200D11B3A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E14FBC4B127A3C6200D11B3A /* icon.png */; };
 		E14FBC85127A401A00D11B3A /* UFTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14FBC84127A401A00D11B3A /* UFTextController.m */; };
-		E16FE7CC127B884A0079B441 /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = E16FE7CB127B884A0079B441 /* icon128.png */; };
+		E15FC5E1127CC2DD007DFCB5 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E15FC5E0127CC2DD007DFCB5 /* icon.icns */; };
 		E1E3BE01127C9C9000BDF4BB /* icon20.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E3BE00127C9C9000BDF4BB /* icon20.png */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +30,9 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* UFText-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UFText-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* UFText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFText.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E14FBC4B127A3C6200D11B3A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E14FBC83127A401A00D11B3A /* UFTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFTextController.h; sourceTree = "<group>"; };
 		E14FBC84127A401A00D11B3A /* UFTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFTextController.m; sourceTree = "<group>"; };
-		E16FE7CB127B884A0079B441 /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon128.png; sourceTree = "<group>"; };
+		E15FC5E0127CC2DD007DFCB5 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		E1E3BE00127C9C9000BDF4BB /* icon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon20.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,9 +109,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E15FC5E0127CC2DD007DFCB5 /* icon.icns */,
 				E1E3BE00127C9C9000BDF4BB /* icon20.png */,
-				E16FE7CB127B884A0079B441 /* icon128.png */,
-				E14FBC4B127A3C6200D11B3A /* icon.png */,
 				8D1107310486CEB800E47090 /* UFText-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -185,9 +182,8 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				E14FBC4C127A3C6200D11B3A /* icon.png in Resources */,
-				E16FE7CC127B884A0079B441 /* icon128.png in Resources */,
 				E1E3BE01127C9C9000BDF4BB /* icon20.png in Resources */,
+				E15FC5E1127CC2DD007DFCB5 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

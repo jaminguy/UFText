@@ -30,8 +30,9 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet NSMenu *menu;
-@property (nonatomic, retain) NSStatusItem *statusItem;
+@property (retain) IBOutlet NSMenu *menu;
+@property (retain) NSStatusItem *statusItem;
+@property (retain) IBOutlet NSMenuItem *reformatMenuItem;
 
 - (IBAction)unformatMenuItemClick:(id)sender;
 - (IBAction)reformatMenuItemClick:(id)sender;
