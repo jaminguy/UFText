@@ -59,6 +59,7 @@
 	if (copiedItems != nil) {
 		NSAttributedString *attributedString = [copiedItems objectAtIndex:0];
 		self.formattedString = attributedString;
+		[self.reformatMenuItem setEnabled:YES];
 		[pasteboard clearContents];
 		[pasteboard writeObjects:[NSArray arrayWithObject:[attributedString string]]];
 	}
@@ -69,6 +70,7 @@
 		NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
 		[pasteboard clearContents];
 		[pasteboard writeObjects:[NSArray arrayWithObjects:self.formattedString, nil]];
+		[self.reformatMenuItem setEnabled:NO];
 	}
 }
 
