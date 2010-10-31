@@ -50,6 +50,7 @@
 	[item setMenu: self.menu];
 	[item setEnabled: YES];
 	[item setImage:[NSImage imageNamed:@"icon20"]];
+	[item setToolTip:[NSString stringWithFormat:@"UFText\nVersion %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"], nil]];
 	self.statusItem = item;
 }
 
